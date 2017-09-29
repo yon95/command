@@ -177,3 +177,17 @@ w: se refiere a los permisos de escritura
 x: se refiere a los permisos de ejecució
 chmod u=w,a+r * Este comando asigna permisos de escritura al usuario dueño y a todos los usuarios les añade permiso de lectura.
 
+https://platzi.com/cursos/linux/ pra un curso de administrador de servidores 
+
+chown -R psycho fotos/ cambia recursiva mente el propietario de los archivos por psycho
+mongoDB y redis para base de dtos 
+chgrp cambia el grupo 
+file archivo te dice el tipo de encripado asqui
+file /dev/null caracter especial 
+whereis ls te dice la ruta de donde se encuentra 
+
+which php dice cual de los dos php estas usando 
+find ~ -name "linux.txt" busca desde home el archivo linux.txt 
+uptime da la hora actual date el dia who quien esta en la maquina 
+mount proporciona una lista de discos montados
+df -h muestra los disco de mejor manera 
