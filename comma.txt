@@ -139,3 +139,6 @@ ln [opciones] origen... directorio
 ln  dir2/dir3/dir4/hi.txt hello  esto crer un archivo hello que esta en el directorio donde te encuentras 
 digamos que si se hace stat a los dos se puede preciar alguna similitu 
 
+ps permite ver los procesos que estan en ejecucion, permite crear un nuevo proceso 
+sleep 60 & si colocal el anp al final te da el numero del proceso 
+kill -9 numero con esto matas el proceso asi no quiera jaja 
