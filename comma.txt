@@ -1,0 +1,121 @@
+pwd te muestra el directorio donde te encuentras
+
+ls lista todo los archivos del directorio
+
+ls -a muestra todo hasta lo oculto
+
+ls -l muestra en orden de ultimo modificado
+
+ls -t muestra con columnas lo siguiente :
+
+la primera son los privilegios, la segunda la cantidad de directorios que posee, la tercera el usuario
+
+la siguiente el nombre del grupo la fecha y el nombre del archivo
+
+con cd accedes a una carpeta o te regresas cd ../..
+
+con mkdir creas un directorio y con touch un archivo 
+
+cp archivo1 archivo2 copias el archivo1 en el 2 sobreescribiendo
+
+cp biopic/ray.txt biopic/notorious.txt historical/ copias el archivo a la otra carpeta
+
+cp m*.txt scifi/ copias todos los archivos que empiezan por m y lo colocas en la carpeta
+
+mv wonderwoman.txt batman.txt superhero/ cortas los archivos y los mueve a la carpeta
+
+mv archivo1 archivo2 renombra el archivo1 por archivo2 
+
+rm archivo elimina el archivo 
+
+rm -r carpeta elimina la carpeta con todo lo que posee 
+
+stdin es estandar input que es lo que escribes stdout es estandar output que es lo que el sistema regresa y 
+
+srdeer es error
+
+con echo escribes y cat muestra
+
+cat archivo muestra el contenido del archivo en la terminal 
+
+echo palabras > archivo ingresa la palabras al archivo, sobreescribiendolo, si no existe lo crea
+
+cat archivo > archivo el output del archivo lo redirecciona al otro sobreescribienbdo
+
+cat archivo >> archivo lo mismo pero no sobreescribe 
+
+cat < archivo muestra en pantalla 
+
+con wc te indica la cantida de lineas, palabra y caracteres de un archivo 
+
+cat archivo | wc esto toma el output del cat y lo vuelve input para wc 
+
+cat volcanoes.txt | wc | cat > islands.txt toma el output de volca y lo piped a wc hasta que lo redirecciona a inslads
+
+sort archivo te ordena por orden alfabetico las lineas
+
+uniq elimina lineas duplicadas 
+
+grep palabra archivo esto te muestra en consola las lineas que posean la palabra del archivo
+
+grep busca en las lineas segun un patron y es sensitivo a matusculas
+
+grep -i Mount mountains.txt busca con sensibilidad no toma mayusuculas ni minusculas
+
+grep -R Arctic /home/ccuser/workspace/geography busca en el directorio dentro de cada archivo la palabra Artic y muestra todos los archivos y la linea que lo contiene
+
+grep -Rl Arctic /home/ccuser/workspace/geography solo muestra los archivos sin la linea 
+
+sed 's/snow/rain/g' forests.txt busca la palabra snow y la reemplaza por rain s es sustituir snow es la palabra a buscar y rain a reemplazar y solo reemplza la primera que busque
+
+g es global y cambia todo
+
+en nano guardas con control o
+
+nano ~/.bash_profile creas el archivo oculto  le escribes echo "Welcome"
+
+source ~/.bash_profile te muestra lo que escribiste, como si compilara el archivo
+
+~ / .bash_profile es el nombre del archivo utilizado para almacenar la configuración del entorno
+
+El ~ representa el directorio de inicio del usuario.
+
+Los . indica un archivo oculto.
+
+El nombre ~ / .bash_profile es importante, ya que es así como la línea de comandos reconoce el perfil bash.
+
+el comando source ~ / .bash_profile activa los cambios en ~ / .bash_profile para la sesión actual. En lugar de cerrar el terminal y necesitar iniciar una nueva sesión, la fuente hace que los cambios estén disponibles de inmediato en la sesión en la que estamos
+
+puedes abrir el bash y añadir alias pd="pwd" y con esto creas un alias del pd pero lo compilas luego con source 
+
+history te muestra los comandos que has hecho 
+
+alias hy="history" 
+
+export USER="Jane Doe"
+
+La línea USER = "Jane Doe" establece la variable de entorno USER a un nombre "Jane Doe". Normalmente, la variable USER se establece en el nombre del propietario del equipo.
+
+export hace que persista en las seciones secundarias 
+
+echo $USER devuelve el valor de la variable para eso se usa el signo de $ 
+
+export PS1=">> "
+
+PS1 es una variable que define el maquillaje y el estilo del símbolo del sistema.
+
+export PS1 = ">>" establece la variable del indicador de comandos y exporta la variable. Aquí cambiamos la línea de comandos predeterminada de $ a >>.
+
+$HOME muestra la ruta de home 
+
+echo $PATH muestra los binarios 
+
+/bin/ls te ejecuta la aciion asi si colocas /bin/pwd te muestra la ruta donde te encuentran, en los binarios estan estos archivos
+
+PATH es una variable de entorno que almacena una lista de directorios separados por dos puntos. Mirando cuidadosamente, echo $ PATH lista los siguientes directorios:
+
+Cada directorio contiene secuencias de comandos para ejecutar la línea de comandos. La variable PATH simplemente indica qué directorios contienen scripts
+
+el comando env 
+
+env | grep PATH busca todas las variable de entorno y lo pasa como input a gret y solo muestra lo que diga PATH
