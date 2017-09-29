@@ -125,5 +125,17 @@ si usas ls -R va listando recursivamente dentro de cada carpeta con cd - te regr
 cd solo te lleva a home
 dir es como ls. con head ves las primeras 10  al igual que tail lineas de un archivo con tail especificas la cantidd de lines
 a mostrar ej tail -4 file.txt con stat te d la informacion del archivo o carpeta du muestra lo uasdo que esta
-el disco en el lugr donde te encuentras 
+el disco en el lugr donde te encuentras du -xh ~
+du --max-depth 3 ~ 
+cp  -vr dir2/*.txt dir2/dir3 .......... md5sum archivo este comando es la suma de comprobación calculada para un archivo. Esto ayuda a detectar la corrupción accidental o deliberada de archivos.
+
+
+Al transferir un archivo de una máquina a otra o descargar archivos desde Internet, para verificar la integridad del archivo compare md5sum en las máquinas de origen y de destino,
+el comando ln hace link 
+
+ln [opciones] origen [destino]
+
+ln [opciones] origen... directorio
+ln  dir2/dir3/dir4/hi.txt hello  esto crer un archivo hello que esta en el directorio donde te encuentras 
+digamos que si se hace stat a los dos se puede preciar alguna similitu 
 
