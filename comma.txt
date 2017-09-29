@@ -63,7 +63,7 @@ grep busca en las lineas segun un patron y es sensitivo a matusculas
 grep -i Mount mountains.txt busca con sensibilidad no toma mayusuculas ni minusculas
 
 grep -R Arctic /home/ccuser/workspace/geography busca en el directorio dentro de cada archivo la palabra Artic y muestra todos los archivos y la linea que lo contiene
-
+grep -n 'linux' hello da el numero de lineas 
 grep -Rl Arctic /home/ccuser/workspace/geography solo muestra los archivos sin la linea 
 
 sed 's/snow/rain/g' forests.txt busca la palabra snow y la reemplaza por rain s es sustituir snow es la palabra a buscar y rain a reemplazar y solo reemplza la primera que busque
@@ -144,3 +144,19 @@ sleep 60 & si colocal el anp al final te da el numero del proceso
 kill -9 numero con esto matas el proceso asi no quiera jaja 
 killall sleep mat los procesos con ee nombre 
 killall -w proceso busca el pid de ese proceso 
+pstree muestra un arbol de procesos 
+title: time
+
+
+time gives statistics about the program it ran.
+
+
+real - the elapsed real time between invocation and termination.
+
+
+user - the user CPU time .
+
+
+sys - the system CPU time . time da el tiempo desde que comenzo y termino una ejecucion 
+time ls ejemplo 
+
