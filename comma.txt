@@ -142,3 +142,5 @@ digamos que si se hace stat a los dos se puede preciar alguna similitu
 ps permite ver los procesos que estan en ejecucion, permite crear un nuevo proceso 
 sleep 60 & si colocal el anp al final te da el numero del proceso 
 kill -9 numero con esto matas el proceso asi no quiera jaja 
+killall sleep mat los procesos con ee nombre 
+killall -w proceso busca el pid de ese proceso 
