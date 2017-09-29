@@ -123,3 +123,7 @@ env | grep PATH busca todas las variable de entorno y lo pasa como input a gret 
 no se puede crear directorios dendtro de directorios, para eso se usa mkdir -p dir/dir/dri de parents 
 si usas ls -R va listando recursivamente dentro de cada carpeta con cd - te regresas al directorio donde hiciste el ultimo cd
 cd solo te lleva a home
+dir es como ls. con head ves las primeras 10  al igual que tail lineas de un archivo con tail especificas la cantidd de lines
+a mostrar ej tail -4 file.txt con stat te d la informacion del archivo o carpeta du muestra lo uasdo que esta
+el disco en el lugr donde te encuentras 
+
