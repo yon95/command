@@ -119,3 +119,7 @@ Cada directorio contiene secuencias de comandos para ejecutar la línea de coman
 el comando env 
 
 env | grep PATH busca todas las variable de entorno y lo pasa como input a gret y solo muestra lo que diga PATH
+
+no se puede crear directorios dendtro de directorios, para eso se usa mkdir -p dir/dir/dri de parents 
+si usas ls -R va listando recursivamente dentro de cada carpeta con cd - te regresas al directorio donde hiciste el ultimo cd
+cd solo te lleva a home
