@@ -160,3 +160,20 @@ user - the user CPU time .
 sys - the system CPU time . time da el tiempo desde que comenzo y termino una ejecucion 
 time ls ejemplo 
 
+diff ve la diferencia entre dos archivos 
+chmod -R 644 ~/chmod_dir cambia tambien los privilegios de los subdirectorios 
+u: usuario dueño del fichero
+
+g: grupo de usuarios del dueño del fichero
+
+o: todos los otros usuarios
+
+a: todos los tipos de usuario (dueño, grupo y otros)
+
+r: se refiere a los permisos de lectura
+
+w: se refiere a los permisos de escritura
+
+x: se refiere a los permisos de ejecució
+chmod u=w,a+r * Este comando asigna permisos de escritura al usuario dueño y a todos los usuarios les añade permiso de lectura.
+
