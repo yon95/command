@@ -53,11 +53,16 @@ fclose(arc);
 void master(int n, int j) {
   pthread_t *p;
   int i;
-  int ch=j/n;
+  int ch=j/n; /// numero de lineas entre numero de hilos 
   int uh=(j/n)+(j%n);
   p=(pthread_t *)malloc(n * sizeof(pthread_t));
   printf("Master\n");
-  for (i=0;i<n;i++) {if (i==n-1) pthread_create(&p[i],NULL,hilo(&i,&uh,&j),NULL); else {pthread_create(&p[i],NULL,hilo(&i,&ch,&j),NULL);}} 
+  for (i=0;i<n;i++) {
+    if (i==n-1) pthread_create(&p[i],NULL,hilo(&i,&uh,&j),NULL); 
+    else {
+      pthread_create(&p[i],NULL,hilo(&i,&ch,&j),NULL);
+    }
+  } 
   for (i=0;i<n;i++) pthread_join(p[i],NULL);
 }
 
